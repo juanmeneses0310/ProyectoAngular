@@ -11,7 +11,6 @@ import { NoEcontradoComponent } from './components/no-econtrado/no-econtrado.com
 
 export const routes: Routes = [
   { path: 'inicio', component: InicioComponent, title: 'Inicio' },
-  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
   { path: 'productos', component: ProductosComponent, title: 'Productos' },
   { path: 'servicios', component: ServiciosComponent, title: 'Servicios' },
   { path: 'nosotros', component: NosotrosComponent, title: 'Nosotros' },
@@ -27,5 +26,6 @@ export const routes: Routes = [
     title: 'Iniciar Sesion',
   },
   { path: 'privado', component: PrivadoComponent, title: 'Privado' },
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
   { path: '**', component: NoEcontradoComponent, title: '404' },
 ];
